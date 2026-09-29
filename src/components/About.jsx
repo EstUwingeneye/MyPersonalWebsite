@@ -32,7 +32,7 @@ export default function About() {
             { label: 'Location', value: 'Kigali, Rwanda 🇷🇼' },
             { label: 'Degree', value: 'BSc. Computer & Software Eng.' },
             { label: 'Focus', value: 'Full-Stack & Networking Engineer' },
-            { label: 'Status', value: 'Open to Opportunities ✅' },
+            { label: 'Status', value: 'Open to Opportunities ' },
           ].map(({ label, value }) => (
             <div key={label} className="bg-gray-900 border border-gray-800 rounded-xl p-4">
               <p className="text-blue-400 text-xs uppercase tracking-wider mb-1">{label}</p>

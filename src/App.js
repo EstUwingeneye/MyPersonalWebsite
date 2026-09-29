@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 export default function App() {
   return (
-    <div className="bg-gray-950 text-white scroll-smooth">
+    <div className="site-shell bg-gray-950 text-white scroll-smooth">
       <Navbar />
       <Hero />
       <About />
@@ -18,7 +18,7 @@ export default function App() {
       <Projects />
       <Education />
       <Contact />
-      <footer className="text-center text-gray-600 text-sm py-6 border-t border-gray-800">
+      <footer className="site-footer text-center text-gray-600 text-sm py-6 border-t border-gray-800">
         © {new Date().getFullYear()} UWINGENEYE Esther. All rights reserved.
       </footer>
     </div>

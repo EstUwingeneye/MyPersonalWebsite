@@ -68,7 +68,7 @@ export default function Contact() {
               type="submit"
               className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-xl font-semibold transition"
             >
-              {sent ? '✅ Message Sent!' : 'Send Message'}
+              {sent ? 'Message Sent!' : 'Send Message'}
             </button>
           </motion.form>
         </div>

@@ -2,6 +2,250 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  --ink: #20252b;
+  --muted: #69737d;
+  --paper: #f6f8f9;
+  --soft: #eaf1f4;
+  --line: #d8e1e5;
+  --coral: #e66f61;
+  --navy: #253f52;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.site-shell {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+}
+
+.site-shell nav {
+  background: rgba(246, 248, 249, 0.94) !important;
+  border-color: var(--line) !important;
+  box-shadow: 0 1px 0 rgba(37, 63, 82, 0.03);
+}
+
+.site-shell nav > div {
+  max-width: 1160px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.site-shell nav span:first-child {
+  color: var(--navy) !important;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+.site-shell nav span:first-child span {
+  color: var(--coral) !important;
+}
+
+.site-shell nav a,
+.site-shell nav button {
+  color: var(--muted) !important;
+}
+
+.site-shell nav a:hover,
+.site-shell nav button:hover {
+  color: var(--coral) !important;
+}
+
+.site-shell section {
+  position: relative;
+}
+
+.site-shell > section:first-of-type {
+  background: var(--soft) !important;
+}
+
+.site-shell > section:first-of-type .border-blue-500 {
+  border-color: var(--coral) !important;
+  box-shadow: 0 20px 45px rgba(37, 63, 82, 0.16) !important;
+}
+
+.site-shell > section:first-of-type .text-blue-400,
+.site-shell > section:first-of-type .text-blue-300 {
+  color: var(--coral) !important;
+}
+
+.site-shell > section:first-of-type .border-gray-600 {
+  border-color: var(--navy) !important;
+  color: var(--navy) !important;
+}
+
+.site-shell > section:first-of-type .border-gray-600:hover {
+  background: var(--navy) !important;
+  color: #fff !important;
+}
+
+.site-shell section h1,
+.site-shell section h2,
+.site-shell section h3 {
+  color: var(--ink) !important;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -0.03em;
+}
+
+.site-shell section h1 {
+  font-size: clamp(3.4rem, 7vw, 6.8rem);
+  line-height: 0.98;
+  font-weight: 600;
+}
+
+.site-shell section h2 {
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+.site-shell section h1 span,
+.site-shell section h2 span {
+  color: var(--coral) !important;
+}
+
+.site-shell section p,
+.site-shell section li,
+.site-shell section label {
+  color: var(--muted) !important;
+}
+
+.site-shell section[id='about'],
+.site-shell section[id='projects'],
+.site-shell section[id='contact'] {
+  background: var(--paper) !important;
+}
+
+.site-shell section[id='skills'] {
+  background: var(--soft) !important;
+}
+
+.site-shell section[id='experience'],
+.site-shell section[id='education'] {
+  background: #fff !important;
+  max-width: none;
+}
+
+.site-shell section[id='experience'] > *,
+.site-shell section[id='education'] > * {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-shell section[id='experience'] > h2,
+.site-shell section[id='education'] > h2 {
+  padding-top: 0;
+}
+
+.site-shell section[id='about'] > div,
+.site-shell section[id='skills'] > div,
+.site-shell section[id='projects'] > div,
+.site-shell section[id='contact'] > div {
+  max-width: 1160px;
+}
+
+.site-shell section[id='about'] .bg-gray-900,
+.site-shell section[id='skills'] .bg-gray-800,
+.site-shell section[id='projects'] .bg-gray-900,
+.site-shell section[id='education'] .bg-gray-900 {
+  background: transparent !important;
+  border-color: var(--line) !important;
+  border-radius: 0.35rem;
+}
+
+.site-shell section[id='about'] .bg-gray-900 {
+  border-top: 2px solid var(--coral) !important;
+}
+
+.site-shell section[id='skills'] .bg-gray-800 {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.site-shell section[id='skills'] .bg-gray-700 {
+  background: #d6e1e5 !important;
+}
+
+.site-shell section[id='skills'] .bg-blue-500,
+.site-shell section[id='contact'] button,
+.site-shell section[id='hero'] .bg-blue-500 {
+  background: var(--coral) !important;
+}
+
+.site-shell section[id='skills'] .bg-blue-500 {
+  border-radius: 0 !important;
+}
+
+.site-shell section[id='experience'] .border-blue-500 {
+  border-color: var(--coral) !important;
+}
+
+.site-shell section[id='experience'] .text-blue-400,
+.site-shell section[id='education'] .text-blue-400,
+.site-shell section[id='contact'] .text-blue-400,
+.site-shell section[id='projects'] .text-blue-400,
+.site-shell section[id='skills'] .text-blue-400,
+.site-shell section[id='about'] .text-blue-400 {
+  color: var(--coral) !important;
+}
+
+.site-shell section[id='projects'] .bg-blue-950 {
+  background: var(--soft) !important;
+  border-color: var(--line) !important;
+}
+
+.site-shell section[id='projects'] .text-blue-300 {
+  color: var(--navy) !important;
+}
+
+.site-shell section[id='contact'] input,
+.site-shell section[id='contact'] textarea {
+  background: #fff !important;
+  border-color: var(--line) !important;
+  border-radius: 0.2rem;
+  color: var(--ink) !important;
+}
+
+.site-shell section[id='contact'] input:focus,
+.site-shell section[id='contact'] textarea:focus {
+  border-color: var(--coral) !important;
+  box-shadow: 0 0 0 3px rgba(230, 111, 97, 0.12);
+}
+
+.site-shell section[id='contact'] button {
+  border-radius: 0.2rem;
+}
+
+.site-shell section[id='contact'] a:hover,
+.site-shell section[id='projects'] a:hover {
+  color: var(--coral) !important;
+}
+
+.site-footer {
+  background: var(--navy);
+  border-color: var(--navy) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+@media (max-width: 767px) {
+  .site-shell nav > div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .site-shell section h1 {
+    font-size: clamp(3rem, 15vw, 4.7rem);
+  }
 }

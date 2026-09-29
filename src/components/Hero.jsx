@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import profileImg from '../profile.jpeg';
+import profileImg from '../profile.jpg';
 
 export default function Hero() {
   return (
@@ -14,7 +14,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Hi there 👋, I'm
+            Hi there! I'm
           </motion.p>
           <motion.h1
             className="text-5xl md:text-6xl font-black text-white mb-4 leading-tight"
@@ -47,8 +47,8 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            Final-year Computer &amp; Software Engineering student passionate about building secure,
-            scalable systems — from full-stack web apps to network infrastructure.
+           Software Engineering finalist focused on backend, web, and mobile development. Experienced with Java Spring Boot, React.js, and Flutter,
+            with a passion for building practical solutions to real-world problems.
           </motion.p>
           <motion.div
             className="flex flex-wrap gap-4 justify-center md:justify-start"

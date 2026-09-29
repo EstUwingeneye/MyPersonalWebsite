@@ -19,6 +19,12 @@ const experiences = [
     period: '2022',
     desc: 'Provided digital government service support, helping citizens access e-government platforms.',
   },
+  {
+    role: 'Advanced java backend developer',
+    company: 'Igire Rwanda(SheCanCode)',
+    period: '2026',
+    desc: 'I attended 4 months training program at Igire Rwanda through she can code program where I got skills about advanced backend in java program (spring boot ).',
+  },
 ];
 
 export default function Experience() {

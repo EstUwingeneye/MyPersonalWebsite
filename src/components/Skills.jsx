@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const skillGroups = [
-  { label: 'Programming', skills: [{ name: 'Java', level: 80 }, { name: 'JavaScript', level: 85 }, { name: 'Python', level: 75 }, { name: 'Dart', level: 70 }, { name: 'PHP', level: 65 }] },
-  { label: 'Web Development', skills: [{ name: 'React', level: 80 }, { name: 'Node.js', level: 75 }, { name: 'Express', level: 75 }] },
-  { label: 'Mobile', skills: [{ name: 'Flutter', level: 75 }] },
-  { label: 'Networking & Security', skills: [{ name: 'CCNA', level: 80 }, { name: 'Cybersecurity', level: 75 }] },
-  { label: 'Tools', skills: [{ name: 'Docker', level: 65 }, { name: 'Git', level: 85 }, { name: 'Postman', level: 80 }, { name: 'Figma', level: 70 }] },
+  { label: 'Programming', skills: [{ name: 'Java', level: 85 }, { name: 'JavaScript', level: 97 }, { name: 'Python', level: 80 }, { name: 'Dart', level: 85 }, { name: 'PHP', level: 80 }] },
+  { label: 'Web Development', skills: [{ name: 'React', level: 89 }, { name: 'Node.js', level: 85 }, { name: 'Express', level: 80}] },
+  { label: 'Mobile', skills: [{ name: 'Flutter', level: 90}] },
+  { label: 'Networking & Security', skills: [{ name: 'CCNA', level: 80 }, { name: 'Cybersecurity', level: 90 }] },
+  { label: 'Tools', skills: [{ name: 'Docker', level: 78}, { name: 'Git', level: 85 }, { name: 'Postman', level: 95 }, { name: 'Figma', level: 70 }] },
 ];
 
 function SkillBar({ name, level, delay }) {

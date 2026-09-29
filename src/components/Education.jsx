@@ -4,7 +4,7 @@ const items = [
   {
     title: 'BSc. Computer & Software Engineering',
     sub: 'University of Rwanda',
-    period: '2021 – 2025 (Expected)',
+    period: '2021 – 2026 (Expected)',
     type: 'education',
   },
   {
@@ -17,6 +17,12 @@ const items = [
     title: 'Cybersecurity Essentials',
     sub: 'Cisco Networking Academy',
     period: '2023',
+    type: 'cert',
+  },
+  {
+    title: 'Advanced java backend ',
+    sub: 'Igire Rwanda(SheCanCode)',
+    period: '2026',
     type: 'cert',
   },
 ];

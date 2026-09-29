@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
       <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-        <span className="text-blue-400 font-bold text-xl tracking-tight">Esther<span className="text-white">.</span></span>
+        <span className="text-blue-400 font-bold text-xl tracking-tight">Esther</span>
         {/* Desktop */}
         <ul className="hidden md:flex gap-6 text-sm text-gray-400">
           {links.map(l => (
